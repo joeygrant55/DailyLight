@@ -3,21 +3,23 @@ import SwiftUI
 @main
 struct DailyLightApp: App {
     @StateObject private var creditManager = CreditManager.shared
+    @StateObject private var scriptureService = UnifiedScriptureService.shared
+    @StateObject private var saintService = SaintService.shared
     @StateObject private var readingsManager = ReadingsManager.shared
     @StateObject private var collectionsManager = BiblicalCollectionsManager.shared
     @StateObject private var bibleAPIService = BibleAPIService.shared
     @StateObject private var liturgicalService = USCCBLiturgicalService.shared
-    @StateObject private var saintService = SaintService.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(creditManager)
+                .environmentObject(scriptureService)
+                .environmentObject(saintService)
                 .environmentObject(readingsManager)
                 .environmentObject(collectionsManager)
                 .environmentObject(bibleAPIService)
                 .environmentObject(liturgicalService)
-                .environmentObject(saintService)
                 .onAppear {
                     creditManager.checkAndResetDailyCredits()
                 }
@@ -27,13 +29,11 @@ struct DailyLightApp: App {
 
 struct ContentView: View {
     @EnvironmentObject var creditManager: CreditManager
-    @EnvironmentObject var readingsManager: ReadingsManager
-    @EnvironmentObject var collectionsManager: BiblicalCollectionsManager
+    @EnvironmentObject var scriptureService: UnifiedScriptureService
+    @EnvironmentObject var saintService: SaintService
     
     var body: some View {
-        NavigationStack {
-            HomeView()
-        }
-        .preferredColorScheme(.light)
+        UnifiedHomeView()
+            .preferredColorScheme(.light)
     }
 }

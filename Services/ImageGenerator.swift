@@ -37,6 +37,139 @@ class ImageGenerator: ObservableObject {
         return image
     }
     
+    func generateForScripture(_ scripture: Scripture) async throws -> UIImage {
+        // Check cache first
+        let cacheKey = "\(scripture.id)_contextual"
+        if let cachedImage = imageCache.get(key: cacheKey) {
+            return cachedImage
+        }
+        
+        // Generate context-aware prompt
+        let prompt = createContextAwarePrompt(for: scripture)
+        
+        // Make API request
+        let image = try await generateWithNanoBanana(prompt: prompt)
+        
+        // Cache the result
+        imageCache.set(image, for: cacheKey)
+        
+        return image
+    }
+    
+    private func createContextAwarePrompt(for scripture: Scripture) -> String {
+        let liturgicalTheme = getLiturgicalEnhancement()
+        
+        // Create a prompt that helps readers understand the context
+        let contextDescription = getContextDescription(for: scripture.context)
+        let visualStyle = getVisualStyle(for: scripture.context)
+        
+        return """
+        Create a \(visualStyle) depicting: "\(scripture.text)"
+        
+        Biblical context: \(scripture.reference.displayText)
+        Scripture type: \(scripture.context.rawValue)
+        Theme: \(scripture.metadata.theme)
+        \(liturgicalTheme)
+        
+        Visual requirements:
+        \(contextDescription)
+        
+        Style guidelines:
+        - Help the viewer understand the historical and spiritual context
+        - Show the setting and characters appropriate to the time period
+        - Include visual elements that clarify the meaning
+        - Make it reverent and suitable for Catholic meditation
+        - Use lighting and composition to convey the spiritual significance
+        """
+    }
+    
+    private func getContextDescription(for context: ScriptureContext) -> String {
+        switch context {
+        case .narrative:
+            return """
+            - Show the actual biblical scene with historically accurate settings
+            - Include the main characters and their interactions
+            - Depict the landscape and architecture of ancient Israel/Middle East
+            - Use natural, realistic lighting to set the mood
+            """
+        case .psalm:
+            return """
+            - Create a contemplative scene of worship and prayer
+            - Show figures in reverent poses with hands raised or kneeling
+            - Include elements of creation praising God (mountains, seas, heavens)
+            - Use divine light streaming from above
+            """
+        case .parable:
+            return """
+            - Illustrate the story with clear visual metaphors
+            - Show both the earthly story and hint at the spiritual meaning
+            - Include symbolic elements that reveal deeper truths
+            - Use composition to guide the eye through the narrative
+            """
+        case .gospel:
+            return """
+            - Focus on Jesus as the central figure with divine presence
+            - Show disciples and crowds in period-appropriate dress
+            - Include details of 1st century Jewish life and customs
+            - Use sacred art traditions with halos or divine light for holy figures
+            """
+        case .prophecy:
+            return """
+            - Create a vision-like quality with mystical elements
+            - Show the prophet receiving or proclaiming the message
+            - Include symbolic imagery from the prophecy
+            - Use dramatic lighting and supernatural elements
+            """
+        case .epistle:
+            return """
+            - Show early Christian communities gathering or in prayer
+            - Include scrolls or letters being read
+            - Depict the unity and love of the early Church
+            - Use warm, intimate lighting suggesting indoor gatherings
+            """
+        case .wisdom:
+            return """
+            - Create a contemplative scene with wise figures
+            - Include symbols of knowledge (scrolls, books, light)
+            - Show the beauty of God's order in creation
+            - Use balanced, harmonious composition
+            """
+        case .apocalyptic:
+            return """
+            - Show heavenly visions with angels and divine throne
+            - Include symbolic creatures and numbers from the text
+            - Depict the cosmic battle between good and evil
+            - Use dramatic contrasts of light and darkness
+            """
+        case .law:
+            return """
+            - Show Moses or lawgivers with tablets or scrolls
+            - Include the mountain or temple setting
+            - Depict the solemnity and authority of God's commands
+            - Use strong, authoritative composition
+            """
+        }
+    }
+    
+    private func getVisualStyle(for context: ScriptureContext) -> String {
+        switch context {
+        case .narrative, .gospel:
+            return "realistic biblical scene in the style of classical religious paintings"
+        case .psalm:
+            return "ethereal worship scene with luminous, spiritual atmosphere"
+        case .parable:
+            return "illustrative scene that clearly shows both story and meaning"
+        case .prophecy, .apocalyptic:
+            return "visionary mystical scene with symbolic imagery"
+        case .epistle:
+            return "warm scene of early Christian community life"
+        case .wisdom:
+            return "contemplative scene showing divine wisdom in creation"
+        case .law:
+            return "majestic scene showing divine authority and reverence"
+        }
+    }
+    
     private func createPrompt(for verse: Verse, theme: String) -> String {
         // Get current liturgical context for enhanced theming
         let liturgicalTheme = getLiturgicalEnhancement()
