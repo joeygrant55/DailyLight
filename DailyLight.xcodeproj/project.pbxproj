@@ -6,43 +6,51 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		D45173362E627C560064B84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45173202E627C540064B84E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D45173272E627C540064B84E;
-			remoteInfo = DailyLight;
-		};
-		D45173402E627C560064B84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45173202E627C540064B84E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D45173272E627C540064B84E;
-			remoteInfo = DailyLight;
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		D451735C2E627CC70064B84E /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451735A2E627CC70064B84E /* SubscriptionView.swift */; };
+		D451735D2E627CC70064B84E /* ReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173592E627CC70064B84E /* ReadingView.swift */; };
+		D451735E2E627CC70064B84E /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173562E627CC70064B84E /* ImageGenerator.swift */; };
+		D451735F2E627CC70064B84E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173582E627CC70064B84E /* HomeView.swift */; };
+		D45173602E627CC70064B84E /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173542E627CC70064B84E /* APIConfig.swift */; };
+		D45173622E627CC70064B84E /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173522E627CC70064B84E /* Verse.swift */; };
+		D45173682E62844C0064B84E /* AppManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173672E62844C0064B84E /* AppManagers.swift */; };
+		D451736B2E62988C0064B84E /* BibleAPIService 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173692E62988C0064B84E /* BibleAPIService 2.swift */; };
+		D451736C2E62988C0064B84E /* CollectionsManager 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451736A2E62988C0064B84E /* CollectionsManager 2.swift */; };
+		D451736F2E6298A90064B84E /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451736E2E6298A90064B84E /* CollectionsView.swift */; };
+		D45173702E6298A90064B84E /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451736D2E6298A90064B84E /* CollectionDetailView.swift */; };
+		D45173722E62A74C0064B84E /* USCCBLiturgicalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173712E62A74C0064B84E /* USCCBLiturgicalService.swift */; };
+		D45173742E62AB6D0064B84E /* MassReadingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173732E62AB6D0064B84E /* MassReadingsView.swift */; };
+		D45173762E62B1280064B84E /* Saint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173752E62B1280064B84E /* Saint.swift */; };
+		D45173782E62B1340064B84E /* SaintService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173772E62B1340064B84E /* SaintService.swift */; };
+		D451737A2E62B1410064B84E /* SaintCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45173792E62B1410064B84E /* SaintCardView.swift */; };
+		D451737C2E6329420064B84E /* DailyMassReadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451737B2E6329420064B84E /* DailyMassReadings.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D45173282E627C540064B84E /* DailyLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D45173352E627C560064B84E /* DailyLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D451733F2E627C560064B84E /* DailyLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45173522E627CC70064B84E /* Verse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
+		D45173542E627CC70064B84E /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		D45173562E627CC70064B84E /* ImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
+		D45173582E627CC70064B84E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D45173592E627CC70064B84E /* ReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingView.swift; sourceTree = "<group>"; };
+		D451735A2E627CC70064B84E /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		D45173672E62844C0064B84E /* AppManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagers.swift; sourceTree = "<group>"; };
+		D45173692E62988C0064B84E /* BibleAPIService 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BibleAPIService 2.swift"; sourceTree = "<group>"; };
+		D451736A2E62988C0064B84E /* CollectionsManager 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionsManager 2.swift"; sourceTree = "<group>"; };
+		D451736D2E6298A90064B84E /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		D451736E2E6298A90064B84E /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
+		D45173712E62A74C0064B84E /* USCCBLiturgicalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USCCBLiturgicalService.swift; sourceTree = "<group>"; };
+		D45173732E62AB6D0064B84E /* MassReadingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassReadingsView.swift; sourceTree = "<group>"; };
+		D45173752E62B1280064B84E /* Saint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saint.swift; sourceTree = "<group>"; };
+		D45173772E62B1340064B84E /* SaintService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintService.swift; sourceTree = "<group>"; };
+		D45173792E62B1410064B84E /* SaintCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintCardView.swift; sourceTree = "<group>"; };
+		D451737B2E6329420064B84E /* DailyMassReadings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMassReadings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D451732A2E627C540064B84E /* DailyLight */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DailyLight;
-			sourceTree = "<group>";
-		};
-		D45173382E627C560064B84E /* DailyLightTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DailyLightTests;
-			sourceTree = "<group>";
-		};
-		D45173422E627C560064B84E /* DailyLightUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DailyLightUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,29 +63,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D45173322E627C560064B84E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D451733C2E627C560064B84E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D451731F2E627C540064B84E = {
 			isa = PBXGroup;
 			children = (
+				D45173532E627CC70064B84E /* Models */,
+				D45173572E627CC70064B84E /* Services */,
+				D451735B2E627CC70064B84E /* Views */,
 				D451732A2E627C540064B84E /* DailyLight */,
-				D45173382E627C560064B84E /* DailyLightTests */,
-				D45173422E627C560064B84E /* DailyLightUITests */,
 				D45173292E627C540064B84E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,10 +81,46 @@
 			isa = PBXGroup;
 			children = (
 				D45173282E627C540064B84E /* DailyLight.app */,
-				D45173352E627C560064B84E /* DailyLightTests.xctest */,
-				D451733F2E627C560064B84E /* DailyLightUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D45173532E627CC70064B84E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D45173752E62B1280064B84E /* Saint.swift */,
+				D45173522E627CC70064B84E /* Verse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D45173572E627CC70064B84E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D451737B2E6329420064B84E /* DailyMassReadings.swift */,
+				D45173772E62B1340064B84E /* SaintService.swift */,
+				D45173712E62A74C0064B84E /* USCCBLiturgicalService.swift */,
+				D45173692E62988C0064B84E /* BibleAPIService 2.swift */,
+				D451736A2E62988C0064B84E /* CollectionsManager 2.swift */,
+				D45173672E62844C0064B84E /* AppManagers.swift */,
+				D45173542E627CC70064B84E /* APIConfig.swift */,
+				D45173562E627CC70064B84E /* ImageGenerator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D451735B2E627CC70064B84E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D45173792E62B1410064B84E /* SaintCardView.swift */,
+				D45173732E62AB6D0064B84E /* MassReadingsView.swift */,
+				D451736D2E6298A90064B84E /* CollectionDetailView.swift */,
+				D451736E2E6298A90064B84E /* CollectionsView.swift */,
+				D45173582E627CC70064B84E /* HomeView.swift */,
+				D45173592E627CC70064B84E /* ReadingView.swift */,
+				D451735A2E627CC70064B84E /* SubscriptionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,52 +148,6 @@
 			productReference = D45173282E627C540064B84E /* DailyLight.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D45173342E627C560064B84E /* DailyLightTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D451734C2E627C560064B84E /* Build configuration list for PBXNativeTarget "DailyLightTests" */;
-			buildPhases = (
-				D45173312E627C560064B84E /* Sources */,
-				D45173322E627C560064B84E /* Frameworks */,
-				D45173332E627C560064B84E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D45173372E627C560064B84E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D45173382E627C560064B84E /* DailyLightTests */,
-			);
-			name = DailyLightTests;
-			packageProductDependencies = (
-			);
-			productName = DailyLightTests;
-			productReference = D45173352E627C560064B84E /* DailyLightTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D451733E2E627C560064B84E /* DailyLightUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D451734F2E627C560064B84E /* Build configuration list for PBXNativeTarget "DailyLightUITests" */;
-			buildPhases = (
-				D451733B2E627C560064B84E /* Sources */,
-				D451733C2E627C560064B84E /* Frameworks */,
-				D451733D2E627C560064B84E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D45173412E627C560064B84E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D45173422E627C560064B84E /* DailyLightUITests */,
-			);
-			name = DailyLightUITests;
-			packageProductDependencies = (
-			);
-			productName = DailyLightUITests;
-			productReference = D451733F2E627C560064B84E /* DailyLightUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +160,6 @@
 				TargetAttributes = {
 					D45173272E627C540064B84E = {
 						CreatedOnToolsVersion = 16.4;
-					};
-					D45173342E627C560064B84E = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = D45173272E627C540064B84E;
-					};
-					D451733E2E627C560064B84E = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = D45173272E627C540064B84E;
 					};
 				};
 			};
@@ -201,28 +178,12 @@
 			projectRoot = "";
 			targets = (
 				D45173272E627C540064B84E /* DailyLight */,
-				D45173342E627C560064B84E /* DailyLightTests */,
-				D451733E2E627C560064B84E /* DailyLightUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D45173262E627C540064B84E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D45173332E627C560064B84E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D451733D2E627C560064B84E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,37 +197,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D45173312E627C560064B84E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D451733B2E627C560064B84E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D451736B2E62988C0064B84E /* BibleAPIService 2.swift in Sources */,
+				D451736C2E62988C0064B84E /* CollectionsManager 2.swift in Sources */,
+				D45173762E62B1280064B84E /* Saint.swift in Sources */,
+				D451735C2E627CC70064B84E /* SubscriptionView.swift in Sources */,
+				D451735D2E627CC70064B84E /* ReadingView.swift in Sources */,
+				D45173682E62844C0064B84E /* AppManagers.swift in Sources */,
+				D45173722E62A74C0064B84E /* USCCBLiturgicalService.swift in Sources */,
+				D45173742E62AB6D0064B84E /* MassReadingsView.swift in Sources */,
+				D451736F2E6298A90064B84E /* CollectionsView.swift in Sources */,
+				D45173702E6298A90064B84E /* CollectionDetailView.swift in Sources */,
+				D451737A2E62B1410064B84E /* SaintCardView.swift in Sources */,
+				D451735E2E627CC70064B84E /* ImageGenerator.swift in Sources */,
+				D451735F2E627CC70064B84E /* HomeView.swift in Sources */,
+				D451737C2E6329420064B84E /* DailyMassReadings.swift in Sources */,
+				D45173782E62B1340064B84E /* SaintService.swift in Sources */,
+				D45173602E627CC70064B84E /* APIConfig.swift in Sources */,
+				D45173622E627CC70064B84E /* Verse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D45173372E627C560064B84E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D45173272E627C540064B84E /* DailyLight */;
-			targetProxy = D45173362E627C560064B84E /* PBXContainerItemProxy */;
-		};
-		D45173412E627C560064B84E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D45173272E627C540064B84E /* DailyLight */;
-			targetProxy = D45173402E627C560064B84E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D45173472E627C560064B84E /* Debug */ = {
@@ -446,78 +397,6 @@
 			};
 			name = Release;
 		};
-		D451734D2E627C560064B84E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4KFGM39U5;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joeygrant.DailyLightTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyLight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyLight";
-			};
-			name = Debug;
-		};
-		D451734E2E627C560064B84E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4KFGM39U5;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joeygrant.DailyLightTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyLight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DailyLight";
-			};
-			name = Release;
-		};
-		D45173502E627C560064B84E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4KFGM39U5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joeygrant.DailyLightUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyLight;
-			};
-			name = Debug;
-		};
-		D45173512E627C560064B84E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4KFGM39U5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joeygrant.DailyLightUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyLight;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,24 +414,6 @@
 			buildConfigurations = (
 				D451734A2E627C560064B84E /* Debug */,
 				D451734B2E627C560064B84E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D451734C2E627C560064B84E /* Build configuration list for PBXNativeTarget "DailyLightTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D451734D2E627C560064B84E /* Debug */,
-				D451734E2E627C560064B84E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D451734F2E627C560064B84E /* Build configuration list for PBXNativeTarget "DailyLightUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D45173502E627C560064B84E /* Debug */,
-				D45173512E627C560064B84E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
